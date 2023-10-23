@@ -1,0 +1,204 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: auto;
+}
+
+.header-div {
+  background-color: rgb(194, 194, 194);
+  height: 80px;
+  display: grid;
+
+}
+
+.head {
+  font-size: 45px;
+  margin: auto;
+  font-weight: bolder;
+}
+
+#p1-wins, #p2-wins {
+  font-size: 20px;
+}
+
+.title {
+  margin: auto;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.canvas {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  background-color: rgb(187, 187, 187);
+  margin: auto;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 7px;
+}
+
+#play-game {
+  height: 100px;
+  width: 200px;
+  margin: auto;
+  font-size: 40px;
+  font-weight: bolder;
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+#play-game:hover {
+  background-color: rgb(193, 10, 10);
+  color: white;
+}
+
+.grid {
+  margin: auto;
+  width: 310px;
+  height: 310px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
+  background-color: rgba(0, 0, 0, 0.886);
+  display: none;
+}
+
+.grid div {
+  text-align: center;
+  background-color: rgb(187, 187, 187);
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+}
+
+.grid div:hover {
+  background-color: rgb(160, 160, 160);
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.button-div {
+  display: flex;
+  margin-top: 10px;
+}
+
+#play-again {
+  height: 80px;
+  width: 300px;
+  margin-top: 50px;
+  margin: auto;
+  font-size: 30px;
+  display: none;
+  border-radius: 20px;
+  border-style: none;
+  color: white;
+  background-color: rgb(72, 41, 245);
+  cursor: pointer;
+}
+
+#play-again:hover {
+  background-color:rgb(29, 0, 193);
+}
+
+#p1-win-message {
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#p2-win-message {
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#tie-message {
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#x0 {
+  display: none;
+}
+
+#o0 {
+  display: none;
+}
+
+#x1 {
+  display: none;
+}
+
+#o1 {
+  display: none;
+}
+
+#x2 {
+  display: none;
+}
+
+#o2 {
+  display: none;
+}
+
+#x3 {
+  display: none;
+}
+
+#o3 {
+  display: none;
+}
+
+#x4 {
+  display: none;
+}
+
+#o4 {
+  display: none;
+}
+
+#x5 {
+  display: none;
+}
+
+#o5 {
+  display: none;
+}
+
+#x6 {
+  display: none;
+}
+
+#o6 {
+  display: none;
+}
+
+#x7 {
+  display: none;
+}
+
+#o7 {
+  display: none;
+}
+
+#x8 {
+  display: none;
+}
+
+#o8 {
+  display: none;
+}
+
+
