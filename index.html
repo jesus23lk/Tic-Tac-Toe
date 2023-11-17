@@ -8,23 +8,33 @@
 
   <body id = "body">
     <div class = "header-div">
-      <p class = "head">TIC TAC TOE</p>
+      <p id = "p1-win-message">Player 1 Wins!</p>
+      <p id = "p2-win-message">Player 2 Wins!</p>
+      <p id = "tie-message">Match is a Tie!</p>
     </div>
-    
-    <p id = "p1-wins">Player One: </p>
-    <p id = "p2-wins">Player Two: </p>
-    
+
     <div class = "canvas">
       <button id = "play-game">PLAY</button>
       <div id = "grid"></div>
     </div>
 
-    <p id = "p1-win-message">Player 1 Wins!</p>
-    <p id = "p2-win-message">Player 2 Wins!</p>
-    <p id = "tie-message">Match is a Tie!</p>
-
     <div class = "button-div" onclick = "resetGame();">
-      <button id = "play-again">Play Again</button>
+      <button id = "play-again">PLAY AGAIN</button>
+    </div>
+
+    <div id = 'score-div'>
+      <div id = 'p1-div'>
+        <div id = 'p1-score'>
+          <div id = 'p1-id-div'>P1</div>
+          <div id = 'p1-score-div'>0</div>
+        </div>
+      </div>
+      <div id = 'p2-div'>
+        <div id = 'p2-score'>
+          <div id = 'p2-id-div'>P2</div>
+          <div id = 'p2-score-div'>0</div>
+        </div>
+      </div>
     </div>
     
     <script type = "text/javascript" src = "code.js"></script>
