@@ -18,7 +18,7 @@ body {
 }
 
 #p1-wins, #p2-wins {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .title {
@@ -34,11 +34,11 @@ p {
   width: 400px;
   height: 400px;
   display: flex;
-  background-color: rgb(187, 187, 187);
+  background-color: rgb(220, 220, 215);
   margin: auto;
   border-radius: 10px;
   border-style: solid;
-  border-width: 20px;
+  border-width: 7px;
 }
 
 #play-game {
@@ -59,7 +59,7 @@ p {
   color: white;
 }
 
-.grid {
+#grid {
   margin: auto;
   width: 310px;
   height: 310px;
@@ -71,16 +71,16 @@ p {
   display: none;
 }
 
-.grid div {
+#grid div {
   text-align: center;
-  background-color: rgb(187, 187, 187);
+  background-color: rgb(220, 220, 215);
   cursor: pointer;
   height: 100px;
   width: 100px;
 }
 
-.grid div:hover {
-  background-color: rgb(160, 160, 160);
+#grid div:hover {
+  background-color: rgb(169, 169, 169);
 }
 
 img {
@@ -127,78 +127,6 @@ img {
   display: none;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-#x0 {
-  display: none;
-}
-
-#o0 {
-  display: none;
-}
-
-#x1 {
-  display: none;
-}
-
-#o1 {
-  display: none;
-}
-
-#x2 {
-  display: none;
-}
-
-#o2 {
-  display: none;
-}
-
-#x3 {
-  display: none;
-}
-
-#o3 {
-  display: none;
-}
-
-#x4 {
-  display: none;
-}
-
-#o4 {
-  display: none;
-}
-
-#x5 {
-  display: none;
-}
-
-#o5 {
-  display: none;
-}
-
-#x6 {
-  display: none;
-}
-
-#o6 {
-  display: none;
-}
-
-#x7 {
-  display: none;
-}
-
-#o7 {
-  display: none;
-}
-
-#x8 {
-  display: none;
-}
-
-#o8 {
-  display: none;
 }
 
 

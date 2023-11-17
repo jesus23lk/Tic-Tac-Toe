@@ -1,6 +1,33 @@
+window.onload = function() {
+
+  setBoard();
+
+}
+
+function setBoard() {
+  const playButton = document.getElementById('play-game');
+  playButton.addEventListener('click', startGame);
+
+  const gameGrid = document.getElementById('grid');
+
+  for(let i = 0; i < 9; i++) {
+    
+    const loc = document.createElement('div');
+    gameGrid.appendChild(loc);
+    loc.className = 'loc';
+    loc.id = 'loc ' + i;
+    loc.addEventListener('click', placeMove);
+
+  }
+
+
+  
+
+}
+
 function startGame() {
   document.getElementById("play-game").style.display = "none";
-  document.querySelector(".grid").style.display = "grid";
+  document.getElementById("grid").style.display = "grid";
 }
 
 function checkForWin(movLoc) {
@@ -56,7 +83,7 @@ function checkForWin(movLoc) {
   }
 
   /*Checks the diagaonals that correspond to location numbers
-    0, 4, 8*/
+    0, 4, 8 */
 
   for(let i = 0; i < 9; i += 4) {
     sum += gameBoard[i];
@@ -109,8 +136,10 @@ function resetGame() {
 
   for(let i = 0; i < 9; i++) {
 
-    document.getElementById('o' + i).style.display = "none";
-    document.getElementById('x' + i).style.display = "none";
+    const curLoc = document.getElementById('loc ' + i);
+    const movImage = curLoc.firstChild;
+
+    if(movImage) curLoc.removeChild(movImage);
 
   }
 
@@ -118,7 +147,9 @@ function resetGame() {
 
 }
 
-function placeMove(movLoc) {    //This function is entered after the player clicks on a div/square
+function placeMove() {    //This function is entered after the player clicks on a div/square
+
+  const movLoc = Number(this.id[4]);
 
   /*conditional below checks to make sure the player clicked a valid square
     
@@ -139,11 +170,11 @@ function placeMove(movLoc) {    //This function is entered after the player clic
 
     gameBoard[movLoc] = 0;
 
-    console.log(gameBoard);
-
     /*Code below makes the O visible when player 1 clicks a valid square*/
-
-    document.getElementById('o' + movLoc).style.display = "block";
+    
+    const movImage = new Image(100, 100)
+    movImage.src = 'Images/O.png';    
+    this.appendChild(movImage);
 
     numMoves++;
 
@@ -191,11 +222,12 @@ function placeMove(movLoc) {    //This function is entered after the player clic
 
     gameBoard[movLoc] = 1;
 
-    console.log(gameBoard);
-
   /*Code below makes the 'X' visible when player 2 clicks a valid square*/
 
-    document.getElementById('x' + movLoc) .style.display = "block";
+    const movImage = new Image(100, 100)
+    movImage.src = 'Images/X.png';
+
+    this.appendChild(movImage);
 
     numMoves++;
 
