@@ -194,7 +194,7 @@ function placeMove() {    //This function is entered after the player clicks on 
 
       p1Wins++;
 
-      document.getElementById('p1-wins').innerHTML = "Player One Wins: " + p1Wins;
+      document.getElementById('p1-score-div').textContent = p1Wins;
 
       return;
       
@@ -241,7 +241,7 @@ function placeMove() {    //This function is entered after the player clicks on 
 
       p2Wins++;
 
-      document.getElementById('p2-wins').innerHTML = 'Player Two Wins: ' + p2Wins;
+      document.getElementById('p2-score-div').textContent = p2Wins;
 
       return;
     }
