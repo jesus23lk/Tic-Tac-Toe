@@ -173,7 +173,7 @@ function placeMove() {    //This function is entered after the player clicks on 
     /*Code below makes the O visible when player 1 clicks a valid square*/
     
     const movImage = new Image(100, 100)
-    movImage.src = 'Images/O.png';    
+    movImage.src = 'Images/o-tic-tac-toe.png';    
     this.appendChild(movImage);
 
     numMoves++;
@@ -225,7 +225,7 @@ function placeMove() {    //This function is entered after the player clicks on 
   /*Code below makes the 'X' visible when player 2 clicks a valid square*/
 
     const movImage = new Image(100, 100)
-    movImage.src = 'Images/X.png';
+    movImage.src = 'Images/x-tic-tac-toe.png';
 
     this.appendChild(movImage);
 
